@@ -16,10 +16,18 @@ public class AnimalTest {
                 }
             };
     }
+
     @Test
     public void testSetGetName() {
         assertTrue(animal.getName() == null);
         animal.setName("Nick");
         assertEquals(animal.getName(), "Nick");
+    }
+
+    @Test
+    public void testSetGetAge() {
+        assertEquals(animal.getAge(), 0);
+        animal.setAge(10);
+        assertEquals(animal.getAge(), 10);
     }
 }
