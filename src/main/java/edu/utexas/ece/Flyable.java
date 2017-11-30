@@ -1,7 +1,6 @@
 package edu.utexas.ece;
 
-public interface Flyable {
+public interface Flyable extends Doable {
     boolean canFly();
-    int speed();
     int height();
 }

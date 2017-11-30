@@ -1,6 +1,6 @@
 package edu.utexas.ece;
 
-public interface Swimmable {
+public interface Swimmable extends Doable {
     boolean canSwim();
-    int speed();
+    int depth();
 }

@@ -23,4 +23,9 @@ public class Fish extends Animal implements Swimmable {
     public int speed() {
         return 2;
     }
+
+    @Override
+    public int depth() {
+        return -10;
+    }
 }
