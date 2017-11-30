@@ -1,6 +1,6 @@
 package edu.utexas.ece;
 
-public class Bird extends Animal {
+public class Bird extends Animal implements Flyable {
     public Bird() {
         super();
     }
@@ -12,5 +12,20 @@ public class Bird extends Animal {
     @Override
     public String say() {
         return "Biu";
+    }
+
+    @Override
+    public boolean canFly() {
+        return true;
+    }
+
+    @Override
+    public int speed() {
+        return 10;
+    }
+
+    @Override
+    public int height() {
+        return 1000;
     }
 }
